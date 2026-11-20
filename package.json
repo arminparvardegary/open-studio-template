@@ -1,0 +1,37 @@
+{
+  "name": "open-studio-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5"
+  },
+  "description": "Open-source Next.js template: multi-page portfolio / studio site with a built-in dashboard. Lorem ipsum content, one-file colour tokens.",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "template",
+    "portfolio",
+    "dashboard",
+    "typescript",
+    "app-router"
+  ],
+  "engines": {
+    "node": ">=20.9"
+  }
+}
