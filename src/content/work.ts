@@ -11,7 +11,7 @@ export type Project = {
   summary: string;
 };
 
-const img = (n: number) => `/images/placeholders/work-${n}.svg`;
+const img = (n: number) => `/images/placeholders/work-${n}.jpg`;
 
 /** Projects shown on the home page, /work and /work/[slug]. */
 export const projects: Project[] = [

@@ -10,7 +10,7 @@ export type Note = {
   image: string;
 };
 
-const img = (n: number) => `/images/placeholders/note-${n}.svg`;
+const img = (n: number) => `/images/placeholders/note-${n}.jpg`;
 
 export const notes: Note[] = [
   { slug: "lorem-ipsum-dolor-sit-amet", title: "Lorem ipsum dolor sit amet consectetur adipiscing", excerpt: p.medium, date: "Oct 7", category: "Lorem ipsum", read: "3 min read", image: img(1) },

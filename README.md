@@ -85,7 +85,7 @@ The browser tab icon is [`src/app/icon.svg`](src/app/icon.svg).
 
 ## Change the images
 
-Project cards, article previews and the small footer covers are placeholder SVGs in [`public/images/placeholders`](public/images/placeholders). Put your own images in `public/images`, then point to them in `src/content/work.ts` and `src/content/insights.ts`. Project card images should be 16:9 (the home page warp effect draws them at 1396×786); article previews are 4:5.
+Project cards, article previews and the small footer covers are placeholder photos (soft 3D renders) in [`public/images/placeholders`](public/images/placeholders). Put your own images in `public/images`, then point to them in `src/content/work.ts` and `src/content/insights.ts`. Project card images should be 16:9 (the home page warp effect draws them at 1396×786); article previews are 4:5.
 
 ## Fonts
 

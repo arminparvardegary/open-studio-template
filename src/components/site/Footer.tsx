@@ -25,7 +25,7 @@ export function Footer() {
           <p className="foot__label">Lorem ipsum &amp; dolor</p>
           <div className="rec">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/placeholders/cover-1.svg" alt="" width={104} height={139} />
+            <img src="/images/placeholders/cover-1.jpg" alt="" width={104} height={139} />
             <div>
               <p className="rec__k"><span className="eq"><i /><i /><i /></span>Lorem ipsum</p>
               <p className="rec__t">Dolor Sit Amet</p>
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
           <div className="rec">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/placeholders/cover-2.svg" alt="" width={104} height={139} />
+            <img src="/images/placeholders/cover-2.jpg" alt="" width={104} height={139} />
             <div>
               <p className="rec__k">Sed do</p>
               <p className="rec__t">Eiusmod Tempor</p>
