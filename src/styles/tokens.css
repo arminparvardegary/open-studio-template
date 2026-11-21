@@ -1,0 +1,66 @@
+/* ═══════════════════════════════════════════════════════════════════
+   DESIGN TOKENS — change the whole look of the template from here.
+   Everything else (site + dashboard) reads these variables.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Registered so colours can fade when the page switches dark ↔ light.
+   (initial-value must be a literal; the real values come from :root below.) */
+@property --bg { syntax: "<color>"; inherits: true; initial-value: #0a0b1f; }
+@property --fg { syntax: "<color>"; inherits: true; initial-value: #ffffff; }
+@property --mut { syntax: "<color>"; inherits: true; initial-value: rgba(255, 255, 255, 0.55); }
+@property --line { syntax: "<color>"; inherits: true; initial-value: rgba(255, 255, 255, 0.14); }
+
+:root {
+  /* ── Palette ─────────────────────────────────────────────────────── */
+  --color-ink: #0a0b1f;            /* dark background, text on light     */
+  --color-paper: #f2efff;          /* light background                   */
+  --color-white: #ffffff;
+  --color-accent: #5a3cf0;         /* main brand colour (hero, reviews)  */
+  --color-accent-bright: #8f7dff;  /* glows, dots, highlights on dark    */
+  --color-accent-soft: #b3a8ff;    /* accent text on dark backgrounds    */
+  --color-on-accent: #ffffff;      /* text on top of --color-accent      */
+
+  /* Status colours (dashboard pills, deltas) */
+  --color-success: #1f9d6a;
+  --color-warning: #c98a12;
+  --color-danger: #d6455d;
+
+  /* Big hero word gradient, top → bottom */
+  --wordmark-1: #ffffff;
+  --wordmark-2: #e6e1ff;
+  --wordmark-3: #a99bff;
+  --wordmark-4: #33229e;
+
+  /* Soft glow colour (r, g, b) used behind the work heading */
+  --accent-glow-rgb: 143, 125, 255;
+
+  /* ── Semantic colours (follow the dark / light section switch) ──── */
+  --bg: var(--color-ink);
+  --fg: var(--color-white);
+  --mut: color-mix(in srgb, var(--color-white) 55%, transparent);
+  --line: color-mix(in srgb, var(--color-white) 14%, transparent);
+  --accent-text: var(--color-accent-soft);
+
+  /* ── Typography ──────────────────────────────────────────────────── */
+  --sans: var(--font-sans), "Helvetica Neue", Arial, sans-serif;
+  --mono: var(--font-mono), ui-monospace, Menlo, Consolas, monospace;
+  --display: var(--font-display), Georgia, serif;
+
+  /* ── Layout & motion ─────────────────────────────────────────────── */
+  --u: min(1vw, 19.2px);           /* fluid unit used for big headings   */
+  --gutter: 40px;
+  --ease: cubic-bezier(0.22, 0.8, 0.2, 1);
+}
+
+/* Light sections flip the semantic colours */
+body.light {
+  --bg: var(--color-paper);
+  --fg: var(--color-ink);
+  --mut: color-mix(in srgb, var(--color-ink) 62%, transparent);
+  --line: color-mix(in srgb, var(--color-ink) 14%, transparent);
+  --accent-text: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+  :root { --u: 1vw; --gutter: 20px; }
+}
